@@ -2,10 +2,10 @@
 <div class="space-y-8">
     <!-- Demo Introduction -->
     <div class="bg-white rounded-xl shadow-md p-6">
-        <div class="border-l-4 brand-border pl-4 mb-8">
-            <h2 class="text-2xl font-bold text-gray-800 mb-4">Anteprima Applicazione</h2>
+        <div class="border-l-4 border-yellow-400 pl-4 mb-8">
+            <h2 class="text-2xl font-bold text-gray-800 mb-4">Anteprima Back Office</h2>
             <p class="text-gray-600">
-                Questa demo mostra l'interfaccia principale della piattaforma, evidenziando le funzionalità chiave e l'esperienza utente prevista.
+                Questa demo mostra l'interfaccia amministrativa della piattaforma, evidenziando le funzionalità chiave per la gestione delle spedizioni, ordini e clienti.
             </p>
         </div>
     </div>
@@ -20,26 +20,26 @@
                 <div class="w-3 h-3 bg-green-500 rounded-full"></div>
             </div>
             <div class="flex-1 bg-white rounded-full px-4 py-1 text-sm text-gray-600">
-                combat-events.stiip.it
+                admin.globalservice.it
             </div>
         </div>
 
         <!-- App Interface -->
         <div class="bg-gray-50 h-[600px] rounded-b-lg overflow-hidden">
             <!-- App Header -->
-            <div class="bg-brand px-6 py-4 flex justify-between items-center">
+            <div class="bg-yellow-400 px-6 py-4 flex justify-between items-center">
                 <div class="flex items-center space-x-4">
-                    <img src="https://stiip.it/wp-content/uploads/2021/11/logo_stiip.svg" alt="Logo" class="h-8">
-                    <span class="font-semibold text-gray-900">Sport Combat Events</span>
+                    <span class="font-semibold text-gray-900">Global Service - Pannello Amministrativo</span>
                 </div>
                 <div class="flex items-center space-x-4">
                     <button class="px-4 py-2 bg-white rounded-lg text-gray-900 text-sm hover:bg-gray-100 transition-colors">
                         <span class="material-icons-outlined text-sm mr-1">notifications</span>
-                        Notifiche
+                        Difformità
+                        <span class="bg-red-500 text-white px-2 py-0.5 rounded-full text-xs ml-2">3</span>
                     </button>
                     <button class="px-4 py-2 bg-gray-900 text-white rounded-lg text-sm hover:bg-gray-800 transition-colors">
                         <span class="material-icons-outlined text-sm mr-1">person</span>
-                        Account
+                        Admin
                     </button>
                 </div>
             </div>
@@ -47,114 +47,134 @@
             <!-- Main Content -->
             <div class="grid grid-cols-12 gap-6 p-6 h-[calc(100%-76px)] overflow-y-auto">
                 <!-- Sidebar -->
-                <div class="col-span-3 bg-white rounded-lg shadow p-4">
+                <div class="col-span-2 bg-white rounded-lg shadow p-4">
                     <div class="space-y-2">
-                        <div class="flex items-center space-x-2 p-2 bg-brand bg-opacity-10 rounded-lg text-gray-900">
+                        <div class="flex items-center space-x-2 p-2 bg-yellow-50 rounded-lg text-gray-900">
                             <span class="material-icons-outlined">dashboard</span>
                             <span>Dashboard</span>
                         </div>
                         <div class="flex items-center space-x-2 p-2 hover:bg-gray-50 rounded-lg text-gray-600">
-                            <span class="material-icons-outlined">event</span>
-                            <span>Eventi</span>
+                            <span class="material-icons-outlined">shopping_cart</span>
+                            <span>Ordini</span>
                         </div>
                         <div class="flex items-center space-x-2 p-2 hover:bg-gray-50 rounded-lg text-gray-600">
-                            <span class="material-icons-outlined">group</span>
-                            <span>Atleti</span>
+                            <span class="material-icons-outlined">local_shipping</span>
+                            <span>Spedizioni</span>
                         </div>
                         <div class="flex items-center space-x-2 p-2 hover:bg-gray-50 rounded-lg text-gray-600">
-                            <span class="material-icons-outlined">sports_kabaddi</span>
-                            <span>Match</span>
+                            <span class="material-icons-outlined">people</span>
+                            <span>Clienti</span>
                         </div>
                         <div class="flex items-center space-x-2 p-2 hover:bg-gray-50 rounded-lg text-gray-600">
-                            <span class="material-icons-outlined">payments</span>
-                            <span>Rimborsi</span>
+                            <span class="material-icons-outlined">price_check</span>
+                            <span>Listini</span>
+                        </div>
+                        <div class="flex items-center space-x-2 p-2 hover:bg-gray-50 rounded-lg text-gray-600">
+                            <span class="material-icons-outlined">receipt_long</span>
+                            <span>Fatture</span>
+                        </div>
+                        <div class="flex items-center space-x-2 p-2 hover:bg-gray-50 rounded-lg text-gray-600">
+                            <span class="material-icons-outlined">warning</span>
+                            <span>Difformità</span>
                         </div>
                     </div>
                 </div>
 
                 <!-- Main Content Area -->
-                <div class="col-span-9 space-y-6">
-                    <!-- Quick Actions -->
-                    <div class="grid grid-cols-3 gap-4">
+                <div class="col-span-10 space-y-6">
+                    <!-- Quick Stats -->
+                    <div class="grid grid-cols-4 gap-4">
                         <div class="bg-white p-4 rounded-lg shadow hover:shadow-md transition-shadow">
                             <div class="flex items-center justify-between mb-4">
-                                <span class="material-icons-outlined text-[#FCD415]">add_circle</span>
-                                <span class="text-sm text-gray-500">Nuovo Evento</span>
-                            </div>
-                            <div class="text-2xl font-bold text-gray-900">12</div>
-                            <div class="text-sm text-gray-500">Eventi attivi</div>
-                        </div>
-                        <div class="bg-white p-4 rounded-lg shadow hover:shadow-md transition-shadow">
-                            <div class="flex items-center justify-between mb-4">
-                                <span class="material-icons-outlined text-[#FCD415]">people</span>
-                                <span class="text-sm text-gray-500">Match Proposti</span>
+                                <span class="material-icons-outlined text-yellow-400">shopping_cart</span>
+                                <span class="text-sm text-gray-500">Ordini Oggi</span>
                             </div>
                             <div class="text-2xl font-bold text-gray-900">24</div>
-                            <div class="text-sm text-gray-500">In attesa di conferma</div>
+                            <div class="text-sm text-gray-500">+12% vs ieri</div>
                         </div>
                         <div class="bg-white p-4 rounded-lg shadow hover:shadow-md transition-shadow">
                             <div class="flex items-center justify-between mb-4">
-                                <span class="material-icons-outlined text-[#FCD415]">sports_kabaddi</span>
-                                <span class="text-sm text-gray-500">Atleti</span>
+                                <span class="material-icons-outlined text-yellow-400">local_shipping</span>
+                                <span class="text-sm text-gray-500">Spedizioni</span>
                             </div>
-                            <div class="text-2xl font-bold text-gray-900">156</div>
-                            <div class="text-sm text-gray-500">Registrati</div>
+                            <div class="text-2xl font-bold text-gray-900">18</div>
+                            <div class="text-sm text-gray-500">Da generare</div>
+                        </div>
+                        <div class="bg-white p-4 rounded-lg shadow hover:shadow-md transition-shadow">
+                            <div class="flex items-center justify-between mb-4">
+                                <span class="material-icons-outlined text-yellow-400">warning</span>
+                                <span class="text-sm text-gray-500">Difformità</span>
+                            </div>
+                            <div class="text-2xl font-bold text-gray-900">3</div>
+                            <div class="text-sm text-gray-500">Da gestire</div>
+                        </div>
+                        <div class="bg-white p-4 rounded-lg shadow hover:shadow-md transition-shadow">
+                            <div class="flex items-center justify-between mb-4">
+                                <span class="material-icons-outlined text-yellow-400">receipt_long</span>
+                                <span class="text-sm text-gray-500">Fatture</span>
+                            </div>
+                            <div class="text-2xl font-bold text-gray-900">15</div>
+                            <div class="text-sm text-gray-500">Da emettere</div>
                         </div>
                     </div>
 
-                    <!-- Recent Events -->
+                    <!-- Recent Orders -->
                     <div class="bg-white rounded-lg shadow p-4">
                         <div class="flex justify-between items-center mb-4">
-                            <h3 class="font-semibold text-gray-900">Eventi Recenti</h3>
-                            <button class="text-sm text-[#FCD415] hover:underline">Vedi tutti</button>
+                            <h3 class="font-semibold text-gray-900">Ultimi Ordini</h3>
+                            <button class="text-sm text-yellow-600 hover:underline">Vedi tutti</button>
                         </div>
-                        <div class="space-y-2">
-                            <div class="flex items-center justify-between p-3 hover:bg-gray-50 rounded-lg cursor-pointer">
-                                <div class="flex items-center space-x-3">
-                                    <span class="material-icons-outlined text-[#FCD415]">event</span>
-                                    <div>
-                                        <div class="font-medium">Torneo Nazionale Roma</div>
-                                        <div class="text-sm text-gray-500">12 Dec 2024 • 8 slot disponibili</div>
-                                    </div>
-                                </div>
-                                <span class="px-3 py-1 bg-green-100 text-green-800 rounded-full text-sm">Aperto</span>
-                            </div>
-                            <div class="flex items-center justify-between p-3 hover:bg-gray-50 rounded-lg cursor-pointer">
-                                <div class="flex items-center space-x-3">
-                                    <span class="material-icons-outlined text-[#FCD415]">event</span>
-                                    <div>
-                                        <div class="font-medium">Riunione Milano</div>
-                                        <div class="text-sm text-gray-500">15 Dec 2024 • 4 slot disponibili</div>
-                                    </div>
-                                </div>
-                                <span class="px-3 py-1 bg-yellow-100 text-yellow-800 rounded-full text-sm">In completamento</span>
-                            </div>
-                        </div>
+                        <table class="w-full">
+                            <thead class="text-sm text-gray-500 border-b">
+                                <tr>
+                                    <th class="text-left py-3">ID Ordine</th>
+                                    <th class="text-left py-3">Cliente</th>
+                                    <th class="text-left py-3">Corriere</th>
+                                    <th class="text-left py-3">Stato</th>
+                                    <th class="text-right py-3">Importo</th>
+                                    <th class="text-right py-3">Azioni</th>
+                                </tr>
+                            </thead>
+                            <tbody class="text-sm">
+                                <tr class="border-b">
+                                    <td class="py-3">#12345</td>
+                                    <td class="py-3">Mario Rossi</td>
+                                    <td class="py-3">UPS</td>
+                                    <td class="py-3">
+                                        <span class="px-2 py-1 bg-green-100 text-green-800 rounded-full text-xs">
+                                            Pagato
+                                        </span>
+                                    </td>
+                                    <td class="py-3 text-right">€ 24,90</td>
+                                    <td class="py-3 text-right">
+                                        <button class="text-yellow-600 hover:text-yellow-700">
+                                            <span class="material-icons-outlined text-sm">visibility</span>
+                                        </button>
+                                    </td>
+                                </tr>
+                                <!-- Altri ordini... -->
+                            </tbody>
+                        </table>
                     </div>
 
-                    <!-- Active Matches -->
+                    <!-- Difformità -->
                     <div class="bg-white rounded-lg shadow p-4">
                         <div class="flex justify-between items-center mb-4">
-                            <h3 class="font-semibold text-gray-900">Match Proposti</h3>
-                            <button class="text-sm text-[#FCD415] hover:underline">Vedi tutti</button>
+                            <h3 class="font-semibold text-gray-900">Difformità da Gestire</h3>
+                            <button class="text-sm text-yellow-600 hover:underline">Vedi tutte</button>
                         </div>
                         <div class="space-y-2">
-                            <div class="flex items-center justify-between p-3 hover:bg-gray-50 rounded-lg cursor-pointer">
+                            <div class="flex items-center justify-between p-3 bg-red-50 rounded-lg">
                                 <div class="flex items-center space-x-3">
-                                    <span class="material-icons-outlined text-[#FCD415]">sports_kabaddi</span>
+                                    <span class="material-icons-outlined text-red-500">warning</span>
                                     <div>
-                                        <div class="font-medium">Mario Rossi vs Luigi Bianchi</div>
-                                        <div class="text-sm text-gray-500">75kg • Senior • Roma</div>
+                                        <div class="font-medium">Peso Eccedente</div>
+                                        <div class="text-sm text-gray-500">Ordine #12345 - Dichiarato: 1kg, Effettivo: 2.5kg</div>
                                     </div>
                                 </div>
-                                <div class="flex items-center space-x-2">
-                                    <button class="p-2 text-green-600 hover:bg-green-50 rounded-full">
-                                        <span class="material-icons-outlined">check_circle</span>
-                                    </button>
-                                    <button class="p-2 text-red-600 hover:bg-red-50 rounded-full">
-                                        <span class="material-icons-outlined">cancel</span>
-                                    </button>
-                                </div>
+                                <button class="px-4 py-2 bg-white text-red-500 rounded-lg text-sm hover:bg-red-50">
+                                    Gestisci
+                                </button>
                             </div>
                         </div>
                     </div>
@@ -162,37 +182,166 @@
             </div>
         </div>
     </div>
+</div>
 
-    <!-- Feature Highlights -->
-    <div class="grid grid-cols-3 gap-6">
-        <div class="bg-white rounded-lg shadow p-4">
-            <div class="flex items-center space-x-2 mb-4">
-                <span class="material-icons-outlined text-[#FCD415]">brush</span>
-                <h4 class="font-medium text-gray-900">Design Moderno</h4>
-            </div>
-            <p class="text-sm text-gray-600">
-                Interfaccia utente intuitiva e moderna, progettata per una facile navigazione e gestione efficiente.
+<!-- Demo Container -->
+<div class="space-y-8" style="margin-top: 60px;">
+    <!-- Demo Introduction -->
+    <div class="bg-white rounded-xl shadow-md p-6">
+        <div class="border-l-4 border-yellow-400 pl-4 mb-8">
+            <h2 class="text-2xl font-bold text-gray-800 mb-4">Frontend User Experience</h2>
+            <p class="text-gray-600">
+                Interfaccia utente modernizzata per il sistema di comparazione prezzi, con focus su usabilità e conversione.
             </p>
         </div>
+    </div>
 
-        <div class="bg-white rounded-lg shadow p-4">
-            <div class="flex items-center space-x-2 mb-4">
-                <span class="material-icons-outlined text-[#FCD415]">devices</span>
-                <h4 class="font-medium text-gray-900">Responsive</h4>
+    <!-- Desktop Preview -->
+    <div class="bg-gray-800 rounded-xl p-6 shadow-2xl" style="margin-bottom: 120px;">
+        <!-- Browser Chrome -->
+        <div class="bg-gray-100 rounded-t-lg flex items-center p-3 space-x-2">
+            <div class="flex space-x-2">
+                <div class="w-3 h-3 bg-red-500 rounded-full"></div>
+                <div class="w-3 h-3 bg-yellow-500 rounded-full"></div>
+                <div class="w-3 h-3 bg-green-500 rounded-full"></div>
             </div>
-            <p class="text-sm text-gray-600">
-                Accessibile da qualsiasi dispositivo, con layout ottimizzato per desktop, tablet e mobile.
-            </p>
+            <div class="flex-1 bg-white rounded-full px-4 py-1 text-sm text-gray-600">
+                spedizioni.globalservice.it
+            </div>
         </div>
 
-        <div class="bg-white rounded-lg shadow p-4">
-            <div class="flex items-center space-x-2 mb-4">
-                <span class="material-icons-outlined text-[#FCD415]">speed</span>
-                <h4 class="font-medium text-gray-900">Performance</h4>
+        <!-- App Interface -->
+        <div class="bg-gray-50 h-[600px] rounded-b-lg overflow-hidden" style="padding-top: 16px;">
+            <!-- Hero Section -->
+
+
+            <!-- Main Form -->
+            <div class="max-w-5xl mx-auto -mt-8 px-6">
+                <div class="bg-white rounded-xl shadow-lg p-6">
+                    <!-- Progress Steps -->
+                    <div class="flex justify-between mb-8">
+                        <div class="flex items-center">
+                            <div class="w-8 h-8 bg-yellow-400 rounded-full flex items-center justify-center text-gray-900 font-medium">1</div>
+                            <div class="ml-3">
+                                <div class="text-sm font-medium text-gray-900">Dettagli spedizione</div>
+                                <div class="text-xs text-gray-500">Inserisci le informazioni</div>
+                            </div>
+                        </div>
+                        <div class="flex items-center">
+                            <div class="w-8 h-8 bg-gray-200 rounded-full flex items-center justify-center text-gray-600 font-medium">2</div>
+                            <div class="ml-3">
+                                <div class="text-sm font-medium text-gray-600">Confronta</div>
+                                <div class="text-xs text-gray-500">Scegli il corriere</div>
+                            </div>
+                        </div>
+                        <div class="flex items-center">
+                            <div class="w-8 h-8 bg-gray-200 rounded-full flex items-center justify-center text-gray-600 font-medium">3</div>
+                            <div class="ml-3">
+                                <div class="text-sm font-medium text-gray-600">Conferma</div>
+                                <div class="text-xs text-gray-500">Paga e spedisci</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Form Grid -->
+                    <div class="grid grid-cols-2 gap-6">
+                        <!-- Left Column -->
+                        <div class="space-y-6">
+                            <div>
+                                <label class="block text-sm font-medium text-gray-700 mb-2">Da Nazione</label>
+                                <div class="relative">
+                                    <select class="block w-full pl-3 pr-10 py-2.5 text-gray-900 border border-gray-300 rounded-lg focus:ring-2 focus:ring-yellow-400 focus:border-yellow-400">
+                                        <option>Italia</option>
+                                        <!-- altre opzioni -->
+                                    </select>
+                                    <span class="material-icons-outlined absolute right-3 top-2.5 text-gray-400">expand_more</span>
+                                </div>
+                            </div>
+                            <div>
+                                <label class="block text-sm font-medium text-gray-700 mb-2">Provincia di partenza</label>
+                                <div class="relative">
+                                    <select class="block w-full pl-3 pr-10 py-2.5 text-gray-900 border border-gray-300 rounded-lg focus:ring-2 focus:ring-yellow-400 focus:border-yellow-400">
+                                        <option>Seleziona provincia</option>
+                                        <!-- altre opzioni -->
+                                    </select>
+                                    <span class="material-icons-outlined absolute right-3 top-2.5 text-gray-400">expand_more</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Right Column -->
+                        <div class="space-y-6">
+                            <div>
+                                <label class="block text-sm font-medium text-gray-700 mb-2">A Nazione</label>
+                                <div class="relative">
+                                    <select class="block w-full pl-3 pr-10 py-2.5 text-gray-900 border border-gray-300 rounded-lg focus:ring-2 focus:ring-yellow-400 focus:border-yellow-400">
+                                        <option>Italia</option>
+                                        <!-- altre opzioni -->
+                                    </select>
+                                    <span class="material-icons-outlined absolute right-3 top-2.5 text-gray-400">expand_more</span>
+                                </div>
+                            </div>
+                            <div>
+                                <label class="block text-sm font-medium text-gray-700 mb-2">Provincia di destinazione</label>
+                                <div class="relative">
+                                    <select class="block w-full pl-3 pr-10 py-2.5 text-gray-900 border border-gray-300 rounded-lg focus:ring-2 focus:ring-yellow-400 focus:border-yellow-400">
+                                        <option>Seleziona provincia</option>
+                                        <!-- altre opzioni -->
+                                    </select>
+                                    <span class="material-icons-outlined absolute right-3 top-2.5 text-gray-400">expand_more</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Package Details -->
+                    <div class="mt-8">
+                        <div class="bg-gray-50 rounded-lg p-4">
+                            <h4 class="font-medium text-gray-900 mb-4">Dettagli Pacco</h4>
+                            <div class="grid grid-cols-6 gap-4">
+                                <div class="col-span-2">
+                                    <label class="block text-sm font-medium text-gray-700 mb-2">Cosa spedisci?</label>
+                                    <div class="relative">
+                                        <select class="block w-full pl-3 pr-10 py-2.5 text-gray-900 border border-gray-300 rounded-lg focus:ring-2 focus:ring-yellow-400 focus:border-yellow-400">
+                                            <option>Pacchi</option>
+                                            <!-- altre opzioni -->
+                                        </select>
+                                        <span class="material-icons-outlined absolute right-3 top-2.5 text-gray-400">expand_more</span>
+                                    </div>
+                                </div>
+                                <div>
+                                    <label class="block text-sm font-medium text-gray-700 mb-2">Peso (kg)</label>
+                                    <input type="number" class="block w-full px-3 py-2.5 text-gray-900 border border-gray-300 rounded-lg focus:ring-2 focus:ring-yellow-400 focus:border-yellow-400">
+                                </div>
+                                <div>
+                                    <label class="block text-sm font-medium text-gray-700 mb-2">Altezza (cm)</label>
+                                    <input type="number" class="block w-full px-3 py-2.5 text-gray-900 border border-gray-300 rounded-lg focus:ring-2 focus:ring-yellow-400 focus:border-yellow-400">
+                                </div>
+                                <div>
+                                    <label class="block text-sm font-medium text-gray-700 mb-2">Larghezza (cm)</label>
+                                    <input type="number" class="block w-full px-3 py-2.5 text-gray-900 border border-gray-300 rounded-lg focus:ring-2 focus:ring-yellow-400 focus:border-yellow-400">
+                                </div>
+                                <div>
+                                    <label class="block text-sm font-medium text-gray-700 mb-2">Lunghezza (cm)</label>
+                                    <input type="number" class="block w-full px-3 py-2.5 text-gray-900 border border-gray-300 rounded-lg focus:ring-2 focus:ring-yellow-400 focus:border-yellow-400">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Action Buttons -->
+                    <div class="flex justify-between mt-8">
+                        <button class="px-4 py-2 text-gray-700 hover:bg-gray-100 rounded-lg flex items-center">
+                            <span class="material-icons-outlined mr-2">refresh</span>
+                            Cancella campi
+                        </button>
+                        <button class="px-6 py-2 bg-yellow-400 text-gray-900 rounded-lg font-medium hover:bg-yellow-500 flex items-center">
+                            Confronta prezzi
+                            <span class="material-icons-outlined ml-2">arrow_forward</span>
+                        </button>
+                    </div>
+                </div>
             </div>
-            <p class="text-sm text-gray-600">
-                Ottimizzata per garantire tempi di caricamento rapidi e un'esperienza fluida.
-            </p>
         </div>
     </div>
 </div>
