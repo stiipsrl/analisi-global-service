@@ -4,9 +4,14 @@
         <div class="border-l-4 border-yellow-400 pl-4 mb-8">
             <h2 class="text-2xl font-bold text-gray-800 mb-4">Roadmap di Sviluppo</h2>
             <p class="text-gray-600">
-                Lo sviluppo della piattaforma è organizzato in 17-21 sprint da 5 giorni lavorativi, suddivisi in quattro fasi principali. 
-                Ogni fase è progettata per rilasciare funzionalità complete e testabili, seguendo un approccio incrementale che permette 
+                Lo sviluppo della piattaforma è organizzato in 19 sprint da 5 giorni lavorativi, suddivisi in quattro fasi principali.
+                Ogni fase è progettata per rilasciare funzionalità complete e testabili, seguendo un approccio incrementale che permette
                 di raccogliere feedback e adattare lo sviluppo alle necessità emergenti.
+            </p>
+            <p class="text-gray-600 mt-4">
+                A questi si aggiungono <strong>3 sprint opzionali</strong> dedicati al doppio frontend: la riproposizione della grafica
+                e della user experience storiche all'interno del nuovo portale, interscambiabili con la nuova veste grafica e alimentate
+                dallo stesso backend gestionale.
             </p>
         </div>
         
@@ -20,7 +25,7 @@
                 </div>
                 <div class="text-center">
                     <div class="font-semibold">Foundation</div>
-                    <div class="text-sm text-gray-500">4-5 sprint</div>
+                    <div class="text-sm text-gray-500">4 sprint</div>
                 </div>
             </div>
             
@@ -30,7 +35,7 @@
                 </div>
                 <div class="text-center">
                     <div class="font-semibold">Frontend</div>
-                    <div class="text-sm text-gray-500">4-5 sprint</div>
+                    <div class="text-sm text-gray-500">4 sprint</div>
                 </div>
             </div>
 
@@ -40,7 +45,7 @@
                 </div>
                 <div class="text-center">
                     <div class="font-semibold">Back Office</div>
-                    <div class="text-sm text-gray-500">5-6 sprint</div>
+                    <div class="text-sm text-gray-500">7 sprint</div>
                 </div>
             </div>
 
@@ -50,7 +55,17 @@
                 </div>
                 <div class="text-center">
                     <div class="font-semibold">Enhancement</div>
-                    <div class="text-sm text-gray-500">4-5 sprint</div>
+                    <div class="text-sm text-gray-500">4 sprint</div>
+                </div>
+            </div>
+
+            <div class="relative z-10">
+                <div class="w-12 h-12 bg-white border-2 border-dashed border-gray-300 rounded-full flex items-center justify-center mb-2" style="margin: auto; margin-bottom: 8px;">
+                    <span class="material-icons-outlined text-gray-400">palette</span>
+                </div>
+                <div class="text-center">
+                    <div class="font-semibold text-gray-400">Doppio FE</div>
+                    <div class="text-sm text-gray-400">3 sprint · opzionale</div>
                 </div>
             </div>
         </div>
@@ -65,7 +80,7 @@
             <div>
                 <div class="flex items-center">
                     <h3 class="text-lg font-semibold text-yellow-800">Fase 1: Foundation</h3>
-                    <span class="ml-4 px-3 py-1 bg-yellow-100 text-yellow-800 text-sm rounded-full">4-5 Sprint</span>
+                    <span class="ml-4 px-3 py-1 bg-yellow-100 text-yellow-800 text-sm rounded-full">4 Sprint</span>
                 </div>
                 <p class="text-gray-600 mt-1">Implementazione dell'infrastruttura core e integrazioni base</p>
             </div>
@@ -85,7 +100,7 @@
                     </li>
                     <li class="flex items-start">
                         <span class="material-icons-outlined text-yellow-400 text-sm mr-2">check_circle</span>
-                        Integrazione API corrieri principali
+                        Modello dati clienti, listini e servizi
                     </li>
                     <li class="flex items-start">
                         <span class="material-icons-outlined text-yellow-400 text-sm mr-2">check_circle</span>
@@ -102,7 +117,7 @@
                 <ul class="space-y-2 text-gray-600">
                     <li class="flex items-start">
                         <span class="material-icons-outlined text-yellow-400 text-sm mr-2">priority_high</span>
-                        Stabilità delle API corrieri
+                        Correttezza di listini e regole di prezzo
                     </li>
                     <li class="flex items-start">
                         <span class="material-icons-outlined text-yellow-400 text-sm mr-2">priority_high</span>
@@ -162,35 +177,39 @@
                 <div class="flex items-center justify-between mb-4">
                     <div class="flex items-center">
                         <span class="w-8 h-8 flex items-center justify-center bg-yellow-400 rounded-lg text-gray-900 font-medium mr-3">2</span>
-                        <h5 class="font-medium text-gray-800">Integrazione API Corrieri</h5>
+                        <h5 class="font-medium text-gray-800">Anagrafiche e Sistema Listini</h5>
                     </div>
                     <span class="px-3 py-1 bg-yellow-100 text-yellow-800 text-sm rounded-full">5 giorni</span>
                 </div>
-                
+
                 <div class="grid grid-cols-2 gap-4">
                     <div>
                         <h6 class="text-sm font-medium text-gray-700 mb-2">Obiettivi Sprint</h6>
                         <ul class="space-y-1">
                             <li class="flex items-start text-sm text-gray-600">
                                 <span class="material-icons-outlined text-green-500 text-sm mr-1">check_circle</span>
-                                Integrazione UPS/DHL
+                                Implementazione modello Clienti e relazioni
                             </li>
                             <li class="flex items-start text-sm text-gray-600">
                                 <span class="material-icons-outlined text-green-500 text-sm mr-1">check_circle</span>
-                                Integrazione TNT/FEDEX
+                                Anagrafica servizi e corrieri a listino
                             </li>
                             <li class="flex items-start text-sm text-gray-600">
                                 <span class="material-icons-outlined text-green-500 text-sm mr-1">check_circle</span>
-                                Sistema di gestione errori API
+                                Listini, tariffari e scontistiche per cliente
+                            </li>
+                            <li class="flex items-start text-sm text-gray-600">
+                                <span class="material-icons-outlined text-green-500 text-sm mr-1">check_circle</span>
+                                Regole di calcolo prezzo
                             </li>
                         </ul>
                     </div>
                     <div>
                         <h6 class="text-sm font-medium text-gray-700 mb-2">Deliverables</h6>
                         <ul class="space-y-1">
-                            <li class="text-sm text-gray-600">• API wrapper per ogni corriere</li>
-                            <li class="text-sm text-gray-600">• Sistema di retry automatico</li>
-                            <li class="text-sm text-gray-600">• Logging delle chiamate</li>
+                            <li class="text-sm text-gray-600">• Modelli e migrations anagrafiche</li>
+                            <li class="text-sm text-gray-600">• Sistema listini configurabile</li>
+                            <li class="text-sm text-gray-600">• Motore prezzi con caching</li>
                         </ul>
                     </div>
                 </div>
@@ -212,19 +231,15 @@
                         <ul class="space-y-1">
                             <li class="flex items-start text-sm text-gray-600">
                                 <span class="material-icons-outlined text-green-500 text-sm mr-1">check_circle</span>
-                                Implementazione modello Clienti e relazioni
-                            </li>
-                            <li class="flex items-start text-sm text-gray-600">
-                                <span class="material-icons-outlined text-green-500 text-sm mr-1">check_circle</span>
                                 Struttura Ordini e Spedizioni
                             </li>
                             <li class="flex items-start text-sm text-gray-600">
                                 <span class="material-icons-outlined text-green-500 text-sm mr-1">check_circle</span>
-                                Sistema Listini e Prezzi
+                                Modelli Fatturazione e Pagamenti
                             </li>
                             <li class="flex items-start text-sm text-gray-600">
                                 <span class="material-icons-outlined text-green-500 text-sm mr-1">check_circle</span>
-                                Modelli Fatturazione e Pagamenti
+                                Macchina a stati e workflow ordine
                             </li>
                         </ul>
                     </div>
@@ -264,7 +279,7 @@
                             </li>
                             <li class="flex items-start text-sm text-gray-600">
                                 <span class="material-icons-outlined text-green-500 text-sm mr-1">check_circle</span>
-                                Implementazione GDPR
+                                Implementazione GDPR (testi e documentazione forniti dal cliente)
                             </li>
                         </ul>
                     </div>
@@ -273,7 +288,7 @@
                         <ul class="space-y-1">
                             <li class="text-sm text-gray-600">• Gateway pagamenti sicuro</li>
                             <li class="text-sm text-gray-600">• Sistema di notifiche</li>
-                            <li class="text-sm text-gray-600">• Policy privacy e cookie</li>
+                            <li class="text-sm text-gray-600">• Policy privacy e cookie (contenuti forniti dal cliente)</li>
                         </ul>
                     </div>
                 </div>
@@ -290,7 +305,7 @@
             <div>
                 <div class="flex items-center">
                     <h3 class="text-lg font-semibold text-yellow-800">Fase 2: Frontend Experience</h3>
-                    <span class="ml-4 px-3 py-1 bg-yellow-100 text-yellow-800 text-sm rounded-full">4-5 Sprint</span>
+                    <span class="ml-4 px-3 py-1 bg-yellow-100 text-yellow-800 text-sm rounded-full">4 Sprint</span>
                 </div>
                 <p class="text-gray-600 mt-1">Sviluppo del frontend WordPress con tema custom in codice e dell'esperienza di spedizione</p>
             </div>
@@ -441,6 +456,10 @@
                             </li>
                             <li class="flex items-start text-sm text-gray-600">
                                 <span class="material-icons-outlined text-green-500 text-sm mr-1">check_circle</span>
+                                Pagamento rapido con metodi già salvati dal cliente
+                            </li>
+                            <li class="flex items-start text-sm text-gray-600">
+                                <span class="material-icons-outlined text-green-500 text-sm mr-1">check_circle</span>
                                 Gestione errori pagamento
                             </li>
                             <li class="flex items-start text-sm text-gray-600">
@@ -453,6 +472,7 @@
                         <h6 class="text-sm font-medium text-gray-700 mb-2">Deliverables</h6>
                         <ul class="space-y-1">
                             <li class="text-sm text-gray-600">• Processo checkout completo</li>
+                            <li class="text-sm text-gray-600">• Checkout rapido per clienti con metodo di pagamento salvato</li>
                             <li class="text-sm text-gray-600">• Sistema notifiche</li>
                             <li class="text-sm text-gray-600">• Email di conferma</li>
                         </ul>
@@ -515,7 +535,7 @@
             <div>
                 <div class="flex items-center">
                     <h3 class="text-lg font-semibold text-yellow-800">Fase 3: Back Office</h3>
-                    <span class="ml-4 px-3 py-1 bg-yellow-100 text-yellow-800 text-sm rounded-full">5-6 Sprint</span>
+                    <span class="ml-4 px-3 py-1 bg-yellow-100 text-yellow-800 text-sm rounded-full">7 Sprint</span>
                 </div>
                 <p class="text-gray-600 mt-1">Sviluppo del sistema gestionale completo per amministratori e operatori</p>
             </div>
@@ -721,7 +741,7 @@
                             </li>
                             <li class="flex items-start text-sm text-gray-600">
                                 <span class="material-icons-outlined text-green-500 text-sm mr-1">check_circle</span>
-                                Integrazione sistema contabile
+                                Export file CSV per gestionale contabilità
                             </li>
                             <li class="flex items-start text-sm text-gray-600">
                                 <span class="material-icons-outlined text-green-500 text-sm mr-1">check_circle</span>
@@ -733,7 +753,7 @@
                         <h6 class="text-sm font-medium text-gray-700 mb-2">Deliverables</h6>
                         <ul class="space-y-1">
                             <li class="text-sm text-gray-600">• Sistema fatturazione completo</li>
-                            <li class="text-sm text-gray-600">• Integrazione contabilità</li>
+                            <li class="text-sm text-gray-600">• Tracciati CSV per il gestionale contabile</li>
                             <li class="text-sm text-gray-600">• Reportistica fiscale</li>
                         </ul>
                     </div>
@@ -784,6 +804,49 @@
                 <div class="flex items-center justify-between mb-4">
                     <div class="flex items-center">
                         <span class="w-8 h-8 flex items-center justify-center bg-yellow-400 rounded-lg text-gray-900 font-medium mr-3">14</span>
+                        <h5 class="font-medium text-gray-800">Gestione Utenti, Ruoli e Permessi</h5>
+                    </div>
+                    <span class="px-3 py-1 bg-yellow-100 text-yellow-800 text-sm rounded-full">5 giorni</span>
+                </div>
+
+                <div class="grid grid-cols-2 gap-4">
+                    <div>
+                        <h6 class="text-sm font-medium text-gray-700 mb-2">Obiettivi Sprint</h6>
+                        <ul class="space-y-1">
+                            <li class="flex items-start text-sm text-gray-600">
+                                <span class="material-icons-outlined text-green-500 text-sm mr-1">check_circle</span>
+                                Utenti operatori e profilazione
+                            </li>
+                            <li class="flex items-start text-sm text-gray-600">
+                                <span class="material-icons-outlined text-green-500 text-sm mr-1">check_circle</span>
+                                Ruoli e permessi granulari per area
+                            </li>
+                            <li class="flex items-start text-sm text-gray-600">
+                                <span class="material-icons-outlined text-green-500 text-sm mr-1">check_circle</span>
+                                Audit log accessi e operazioni
+                            </li>
+                            <li class="flex items-start text-sm text-gray-600">
+                                <span class="material-icons-outlined text-green-500 text-sm mr-1">check_circle</span>
+                                Gestione sessioni e policy password
+                            </li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h6 class="text-sm font-medium text-gray-700 mb-2">Deliverables</h6>
+                        <ul class="space-y-1">
+                            <li class="text-sm text-gray-600">• Sistema ruoli e permessi configurabile</li>
+                            <li class="text-sm text-gray-600">• Audit trail delle operazioni</li>
+                            <li class="text-sm text-gray-600">• Pannello gestione utenti</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Sprint 15 -->
+            <div class="bg-white rounded-lg border border-gray-200 p-4 hover:shadow-md transition-shadow">
+                <div class="flex items-center justify-between mb-4">
+                    <div class="flex items-center">
+                        <span class="w-8 h-8 flex items-center justify-center bg-yellow-400 rounded-lg text-gray-900 font-medium mr-3">15</span>
                         <h5 class="font-medium text-gray-800">Testing e Ottimizzazione Back Office</h5>
                     </div>
                     <span class="px-3 py-1 bg-yellow-100 text-yellow-800 text-sm rounded-full">5 giorni</span>
@@ -823,7 +886,6 @@
             </div>
         </div>
     </div>
-    </div>
 
     <!-- Enhancement Phase -->
     <div class="bg-white rounded-xl shadow-md p-6 mt-8">
@@ -834,7 +896,7 @@
             <div>
                 <div class="flex items-center">
                     <h3 class="text-lg font-semibold text-yellow-800">Fase 4: Enhancement & Optimization</h3>
-                    <span class="ml-4 px-3 py-1 bg-yellow-100 text-yellow-800 text-sm rounded-full">4-5 Sprint</span>
+                    <span class="ml-4 px-3 py-1 bg-yellow-100 text-yellow-800 text-sm rounded-full">4 Sprint</span>
                 </div>
                 <p class="text-gray-600 mt-1">Ottimizzazione generale e implementazione funzionalità avanzate</p>
             </div>
@@ -887,11 +949,11 @@
 
         <!-- Sprint Enhancement -->
         <div class="space-y-6">
-            <!-- Sprint 15 -->
+            <!-- Sprint 16 -->
             <div class="bg-white rounded-lg border border-gray-200 p-4 hover:shadow-md transition-shadow">
                 <div class="flex items-center justify-between mb-4">
                     <div class="flex items-center">
-                        <span class="w-8 h-8 flex items-center justify-center bg-yellow-400 rounded-lg text-gray-900 font-medium mr-3">15</span>
+                        <span class="w-8 h-8 flex items-center justify-center bg-yellow-400 rounded-lg text-gray-900 font-medium mr-3">16</span>
                         <h5 class="font-medium text-gray-800">Ottimizzazione Form e Flussi</h5>
                     </div>
                     <span class="px-3 py-1 bg-yellow-100 text-yellow-800 text-sm rounded-full">5 giorni</span>
@@ -925,11 +987,11 @@
                 </div>
             </div>
 
-            <!-- Sprint 16 -->
+            <!-- Sprint 17 -->
             <div class="bg-white rounded-lg border border-gray-200 p-4 hover:shadow-md transition-shadow">
                 <div class="flex items-center justify-between mb-4">
                     <div class="flex items-center">
-                        <span class="w-8 h-8 flex items-center justify-center bg-yellow-400 rounded-lg text-gray-900 font-medium mr-3">16</span>
+                        <span class="w-8 h-8 flex items-center justify-center bg-yellow-400 rounded-lg text-gray-900 font-medium mr-3">17</span>
                         <h5 class="font-medium text-gray-800">Fix e Miglioramenti Back Office</h5>
                     </div>
                     <span class="px-3 py-1 bg-yellow-100 text-yellow-800 text-sm rounded-full">5 giorni</span>
@@ -964,11 +1026,11 @@
                 </div>
             </div>
 
-            <!-- Sprint 17 -->
+            <!-- Sprint 18 -->
             <div class="bg-white rounded-lg border border-gray-200 p-4 hover:shadow-md transition-shadow">
                 <div class="flex items-center justify-between mb-4">
                     <div class="flex items-center">
-                        <span class="w-8 h-8 flex items-center justify-center bg-yellow-400 rounded-lg text-gray-900 font-medium mr-3">17</span>
+                        <span class="w-8 h-8 flex items-center justify-center bg-yellow-400 rounded-lg text-gray-900 font-medium mr-3">18</span>
                         <h5 class="font-medium text-gray-800">Importazione Dati Legacy</h5>
                     </div>
                     <span class="px-3 py-1 bg-yellow-100 text-yellow-800 text-sm rounded-full">5 giorni</span>
@@ -1008,11 +1070,11 @@
                 </div>
             </div>
 
-            <!-- Sprint 18 -->
+            <!-- Sprint 19 -->
             <div class="bg-white rounded-lg border border-gray-200 p-4 hover:shadow-md transition-shadow">
                 <div class="flex items-center justify-between mb-4">
                     <div class="flex items-center">
-                        <span class="w-8 h-8 flex items-center justify-center bg-yellow-400 rounded-lg text-gray-900 font-medium mr-3">18</span>
+                        <span class="w-8 h-8 flex items-center justify-center bg-yellow-400 rounded-lg text-gray-900 font-medium mr-3">19</span>
                         <h5 class="font-medium text-gray-800">Testing e Deployment</h5>
                     </div>
                     <span class="px-3 py-1 bg-yellow-100 text-yellow-800 text-sm rounded-full">5 giorni</span>
@@ -1054,6 +1116,210 @@
         </div>
     </div>
 
+    <!-- Fase Opzionale: Doppio Frontend -->
+    <div class="bg-white rounded-xl border-2 border-dashed border-gray-300 p-6 mt-8">
+        <div class="flex items-center mb-8">
+            <div class="flex items-center justify-center w-12 h-12 bg-gray-100 border border-gray-200 rounded-xl mr-4">
+                <span class="material-icons-outlined text-2xl text-gray-500">palette</span>
+            </div>
+            <div>
+                <div class="flex items-center">
+                    <h3 class="text-lg font-semibold text-gray-700">Fase 5: Doppio Frontend</h3>
+                    <span class="ml-4 px-3 py-1 bg-gray-100 text-gray-600 border border-gray-300 text-sm rounded-full">3 Sprint · Opzionale</span>
+                </div>
+                <p class="text-gray-600 mt-1">Riproposizione della grafica e della user experience storiche nel nuovo portale, interscambiabili con la nuova veste e alimentate dallo stesso backend gestionale</p>
+            </div>
+        </div>
+
+        <!-- Punti chiave Doppio Frontend -->
+        <div class="grid grid-cols-2 gap-6 mb-8">
+            <div class="bg-gray-50 rounded-lg p-4 border border-gray-100">
+                <div class="flex items-center mb-3">
+                    <span class="material-icons-outlined text-gray-400 mr-2">build</span>
+                    <h4 class="font-medium text-gray-800">Obiettivi Principali</h4>
+                </div>
+                <ul class="space-y-2 text-gray-600">
+                    <li class="flex items-start">
+                        <span class="material-icons-outlined text-gray-400 text-sm mr-2">check_circle</span>
+                        Ricostruzione della veste grafica storica
+                    </li>
+                    <li class="flex items-start">
+                        <span class="material-icons-outlined text-gray-400 text-sm mr-2">check_circle</span>
+                        Due interfacce interscambiabili sullo stesso backend
+                    </li>
+                    <li class="flex items-start">
+                        <span class="material-icons-outlined text-gray-400 text-sm mr-2">check_circle</span>
+                        Confronto A/B tra vecchia e nuova esperienza
+                    </li>
+                </ul>
+            </div>
+
+            <div class="bg-gray-50 rounded-lg p-4 border border-gray-100">
+                <div class="flex items-center mb-3">
+                    <span class="material-icons-outlined text-gray-400 mr-2">warning</span>
+                    <h4 class="font-medium text-gray-800">Punti di Attenzione</h4>
+                </div>
+                <ul class="space-y-2 text-gray-600">
+                    <li class="flex items-start">
+                        <span class="material-icons-outlined text-gray-400 text-sm mr-2">priority_high</span>
+                        Parità funzionale tra le due interfacce
+                    </li>
+                    <li class="flex items-start">
+                        <span class="material-icons-outlined text-gray-400 text-sm mr-2">priority_high</span>
+                        Manutenzione di due layer di presentazione
+                    </li>
+                    <li class="flex items-start">
+                        <span class="material-icons-outlined text-gray-400 text-sm mr-2">priority_high</span>
+                        Coerenza dei dati tra le due esperienze
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Sprint Doppio Frontend -->
+        <div class="space-y-6">
+            <!-- Sprint 20 -->
+            <div class="bg-white rounded-lg border border-gray-200 p-4 hover:shadow-md transition-shadow">
+                <div class="flex items-center justify-between mb-4">
+                    <div class="flex items-center">
+                        <span class="w-8 h-8 flex items-center justify-center bg-gray-200 rounded-lg text-gray-700 font-medium mr-3">20</span>
+                        <h5 class="font-medium text-gray-800">Design System Legacy e Struttura Tema</h5>
+                    </div>
+                    <span class="px-3 py-1 bg-gray-100 text-gray-600 text-sm rounded-full">5 giorni</span>
+                </div>
+
+                <div class="grid grid-cols-2 gap-4">
+                    <div>
+                        <h6 class="text-sm font-medium text-gray-700 mb-2">Obiettivi Sprint</h6>
+                        <ul class="space-y-1">
+                            <li class="flex items-start text-sm text-gray-600">
+                                <span class="material-icons-outlined text-green-500 text-sm mr-1">check_circle</span>
+                                Analisi e censimento del sito attuale
+                            </li>
+                            <li class="flex items-start text-sm text-gray-600">
+                                <span class="material-icons-outlined text-green-500 text-sm mr-1">check_circle</span>
+                                Ricostruzione di layout, palette e tipografia storiche
+                            </li>
+                            <li class="flex items-start text-sm text-gray-600">
+                                <span class="material-icons-outlined text-green-500 text-sm mr-1">check_circle</span>
+                                Componenti legacy come secondo tema versionato
+                            </li>
+                            <li class="flex items-start text-sm text-gray-600">
+                                <span class="material-icons-outlined text-green-500 text-sm mr-1">check_circle</span>
+                                Base tecnica per lo switch tra interfacce
+                            </li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h6 class="text-sm font-medium text-gray-700 mb-2">Deliverables</h6>
+                        <ul class="space-y-1">
+                            <li class="text-sm text-gray-600">• Design system legacy documentato</li>
+                            <li class="text-sm text-gray-600">• Secondo tema WordPress in codice</li>
+                            <li class="text-sm text-gray-600">• Libreria componenti storici</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Sprint 21 -->
+            <div class="bg-white rounded-lg border border-gray-200 p-4 hover:shadow-md transition-shadow">
+                <div class="flex items-center justify-between mb-4">
+                    <div class="flex items-center">
+                        <span class="w-8 h-8 flex items-center justify-center bg-gray-200 rounded-lg text-gray-700 font-medium mr-3">21</span>
+                        <h5 class="font-medium text-gray-800">Porting Flussi Legacy sul Nuovo Backend</h5>
+                    </div>
+                    <span class="px-3 py-1 bg-gray-100 text-gray-600 text-sm rounded-full">5 giorni</span>
+                </div>
+
+                <div class="grid grid-cols-2 gap-4">
+                    <div>
+                        <h6 class="text-sm font-medium text-gray-700 mb-2">Obiettivi Sprint</h6>
+                        <ul class="space-y-1">
+                            <li class="flex items-start text-sm text-gray-600">
+                                <span class="material-icons-outlined text-green-500 text-sm mr-1">check_circle</span>
+                                Form spedizione nella veste storica
+                            </li>
+                            <li class="flex items-start text-sm text-gray-600">
+                                <span class="material-icons-outlined text-green-500 text-sm mr-1">check_circle</span>
+                                Griglia comparativa e checkout legacy
+                            </li>
+                            <li class="flex items-start text-sm text-gray-600">
+                                <span class="material-icons-outlined text-green-500 text-sm mr-1">check_circle</span>
+                                Area cliente nella grafica precedente
+                            </li>
+                            <li class="flex items-start text-sm text-gray-600">
+                                <span class="material-icons-outlined text-green-500 text-sm mr-1">check_circle</span>
+                                Collegamento agli stessi endpoint REST del gestionale
+                            </li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h6 class="text-sm font-medium text-gray-700 mb-2">Deliverables</h6>
+                        <ul class="space-y-1">
+                            <li class="text-sm text-gray-600">• Flussi completi in veste legacy</li>
+                            <li class="text-sm text-gray-600">• Parità funzionale con la nuova interfaccia</li>
+                            <li class="text-sm text-gray-600">• Nessuna duplicazione di logica applicativa</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Sprint 22 -->
+            <div class="bg-white rounded-lg border border-gray-200 p-4 hover:shadow-md transition-shadow">
+                <div class="flex items-center justify-between mb-4">
+                    <div class="flex items-center">
+                        <span class="w-8 h-8 flex items-center justify-center bg-gray-200 rounded-lg text-gray-700 font-medium mr-3">22</span>
+                        <h5 class="font-medium text-gray-800">Switch, A/B Testing e Rilascio</h5>
+                    </div>
+                    <span class="px-3 py-1 bg-gray-100 text-gray-600 text-sm rounded-full">5 giorni</span>
+                </div>
+
+                <div class="grid grid-cols-2 gap-4">
+                    <div>
+                        <h6 class="text-sm font-medium text-gray-700 mb-2">Obiettivi Sprint</h6>
+                        <ul class="space-y-1">
+                            <li class="flex items-start text-sm text-gray-600">
+                                <span class="material-icons-outlined text-green-500 text-sm mr-1">check_circle</span>
+                                Commutazione tra le due interfacce per utente o gruppo
+                            </li>
+                            <li class="flex items-start text-sm text-gray-600">
+                                <span class="material-icons-outlined text-green-500 text-sm mr-1">check_circle</span>
+                                Ripartizione del traffico per percentuale
+                            </li>
+                            <li class="flex items-start text-sm text-gray-600">
+                                <span class="material-icons-outlined text-green-500 text-sm mr-1">check_circle</span>
+                                A/B testing e raccolta metriche di conversione
+                            </li>
+                            <li class="flex items-start text-sm text-gray-600">
+                                <span class="material-icons-outlined text-green-500 text-sm mr-1">check_circle</span>
+                                QA cross-browser e responsive
+                            </li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h6 class="text-sm font-medium text-gray-700 mb-2">Deliverables</h6>
+                        <ul class="space-y-1">
+                            <li class="text-sm text-gray-600">• Meccanismo di switch configurabile</li>
+                            <li class="text-sm text-gray-600">• Dashboard di confronto A/B</li>
+                            <li class="text-sm text-gray-600">• Doppio frontend in produzione</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="mt-8 bg-gray-50 rounded-lg p-4 border border-gray-100">
+            <div class="flex items-start">
+                <span class="material-icons-outlined text-gray-400 mr-3">info</span>
+                <p class="text-sm text-gray-600">
+                    Nessuna duplicazione di logica applicativa: le due interfacce condividono backend, API ed endpoint.
+                    Cambia esclusivamente il layer di presentazione, così ogni evoluzione funzionale resta unica e si
+                    riflette automaticamente su entrambe le vesti grafiche.
+                </p>
+            </div>
+        </div>
+    </div>
+
     <!-- Nota Conclusiva -->
     <div class="bg-white rounded-lg p-6 border border-gray-200 mt-8" style="margin-bottom: 120px;">
         <div class="flex items-start">
@@ -1061,9 +1327,10 @@
             <div>
                 <h4 class="font-medium text-gray-800 mb-2">Nota sulla Pianificazione</h4>
                 <p class="text-gray-600">
-                    Questa roadmap rappresenta una pianificazione di massima del progetto, con una stima di 18 sprint totali 
-                    (90 giorni lavorativi). La suddivisione in fasi permette un rilascio incrementale delle funzionalità, 
-                    consentendo di raccogliere feedback e adattare lo sviluppo alle necessità emergenti. Le tempistiche 
+                    Questa roadmap rappresenta la pianificazione del progetto, con 19 sprint totali
+                    (95 giorni lavorativi), estendibili a 22 sprint (110 giorni lavorativi) attivando la fase opzionale
+                    del doppio frontend. La suddivisione in fasi permette un rilascio incrementale delle funzionalità,
+                    consentendo di raccogliere feedback e adattare lo sviluppo alle necessità emergenti. Le tempistiche
                     potrebbero variare in base alle priorità del cliente e alla complessità effettiva riscontrata durante lo sviluppo.
                 </p>
             </div>

@@ -1,0 +1,311 @@
+<div class="space-y-8">
+    <!-- Intro Section -->
+    <div class="bg-white rounded-xl shadow-md p-6">
+        <div class="border-l-4 border-yellow-400 pl-4 mb-8">
+            <h2 class="text-2xl font-bold text-gray-800 mb-4">Investimento e Piano Economico</h2>
+            <p class="text-gray-600">
+                Lo sviluppo è valorizzato a sprint: ogni sprint corrisponde a 5 giorni lavorativi di team dedicato
+                e ha un costo di <strong>3.000 €</strong>. Il totale dipende dall'attivazione o meno della fase
+                opzionale del doppio frontend. Tutti gli importi indicati si intendono IVA esclusa.
+            </p>
+        </div>
+
+        <!-- Tile riepilogo -->
+        <div class="grid grid-cols-3 gap-6">
+            <div class="bg-yellow-50 rounded-lg p-6 text-center border border-yellow-100">
+                <div class="text-3xl font-bold text-gray-800">3.000 €</div>
+                <div class="text-sm text-gray-600 mt-1">per sprint (5 giorni)</div>
+            </div>
+            <div class="bg-yellow-50 rounded-lg p-6 text-center border border-yellow-100">
+                <div class="text-3xl font-bold text-gray-800">19</div>
+                <div class="text-sm text-gray-600 mt-1">sprint inclusi nel progetto base</div>
+            </div>
+            <div class="bg-yellow-50 rounded-lg p-6 text-center border border-yellow-100">
+                <div class="text-3xl font-bold text-gray-800">12</div>
+                <div class="text-sm text-gray-600 mt-1">rate mensili</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Riepilogo Costi -->
+    <div class="bg-white rounded-xl shadow-md p-6">
+        <div class="flex items-center mb-6">
+            <div class="flex items-center justify-center w-12 h-12 bg-yellow-400 rounded-xl mr-4">
+                <span class="material-icons-outlined text-2xl text-gray-900">receipt_long</span>
+            </div>
+            <div>
+                <h3 class="text-lg font-semibold text-yellow-800">Riepilogo Costi di Sviluppo</h3>
+                <p class="text-gray-600 mt-1">Dettaglio per fase, con la Fase 5 attivabile a discrezione del cliente</p>
+            </div>
+        </div>
+
+        <div class="overflow-x-auto">
+            <table class="w-full">
+                <thead class="text-sm text-gray-500 border-b">
+                    <tr>
+                        <th class="text-left py-3">Voce</th>
+                        <th class="text-right py-3">Sprint</th>
+                        <th class="text-right py-3">Giorni</th>
+                        <th class="text-right py-3">Importo</th>
+                    </tr>
+                </thead>
+                <tbody class="text-sm">
+                    <tr class="border-b">
+                        <td class="py-3">
+                            <div class="font-medium text-gray-800">Fasi 1-4 — Piattaforma completa</div>
+                            <div class="text-gray-500">Foundation, Frontend, Back Office, Enhancement</div>
+                        </td>
+                        <td class="py-3 text-right">19</td>
+                        <td class="py-3 text-right">95</td>
+                        <td class="py-3 text-right font-medium text-gray-800">57.000 €</td>
+                    </tr>
+                    <tr class="border-b">
+                        <td class="py-3">
+                            <div class="font-medium text-gray-800">
+                                Fase 5 — Doppio frontend
+                                <span class="ml-2 px-2 py-1 bg-gray-100 text-gray-600 rounded-full text-xs">Opzionale</span>
+                            </div>
+                            <div class="text-gray-500">Grafica e UX storiche riportate nel nuovo portale</div>
+                        </td>
+                        <td class="py-3 text-right">3</td>
+                        <td class="py-3 text-right">15</td>
+                        <td class="py-3 text-right font-medium text-gray-800">9.000 €</td>
+                    </tr>
+                    <tr class="bg-yellow-50">
+                        <td class="py-3 pl-3 font-semibold text-gray-800 rounded-l-lg">Totale con fase opzionale</td>
+                        <td class="py-3 text-right font-semibold text-gray-800">22</td>
+                        <td class="py-3 text-right font-semibold text-gray-800">110</td>
+                        <td class="py-3 pr-3 text-right font-bold text-lg text-gray-800 rounded-r-lg">66.000 €</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <!-- Scenari -->
+    <div class="bg-white rounded-xl shadow-md p-6">
+        <div class="flex items-center mb-6">
+            <div class="flex items-center justify-center w-12 h-12 bg-yellow-400 rounded-xl mr-4">
+                <span class="material-icons-outlined text-2xl text-gray-900">compare_arrows</span>
+            </div>
+            <div>
+                <h3 class="text-lg font-semibold text-yellow-800">Scenari di Investimento</h3>
+                <p class="text-gray-600 mt-1">Entrambi gli scenari prevedono un piano di pagamento in 12 rate mensili</p>
+            </div>
+        </div>
+
+        <div class="grid grid-cols-2 gap-6">
+            <!-- Scenario Base -->
+            <div class="bg-gray-50 rounded-lg p-6 border border-gray-200">
+                <div class="flex items-center justify-between mb-4">
+                    <h4 class="font-semibold text-gray-800">Scenario Base</h4>
+                    <span class="px-3 py-1 bg-gray-100 text-gray-600 text-sm rounded-full">19 sprint</span>
+                </div>
+                <ul class="space-y-2 text-sm text-gray-600 mb-6">
+                    <li class="flex items-start">
+                        <span class="material-icons-outlined text-yellow-400 text-sm mr-2">check_circle</span>
+                        Fasi 1-4 complete, piattaforma in produzione
+                    </li>
+                    <li class="flex items-start">
+                        <span class="material-icons-outlined text-yellow-400 text-sm mr-2">check_circle</span>
+                        95 giorni lavorativi di sviluppo
+                    </li>
+                    <li class="flex items-start">
+                        <span class="material-icons-outlined text-yellow-400 text-sm mr-2">check_circle</span>
+                        Nuova veste grafica del portale
+                    </li>
+                </ul>
+                <div class="border-t border-gray-200 pt-4">
+                    <div class="flex items-baseline justify-between">
+                        <span class="text-sm text-gray-500">Totale</span>
+                        <span class="text-2xl font-bold text-gray-800">57.000 €</span>
+                    </div>
+                    <div class="flex items-baseline justify-between mt-2">
+                        <span class="text-sm text-gray-500">12 rate mensili da</span>
+                        <span class="text-lg font-semibold text-gray-700">4.750 € / mese</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Scenario Completo -->
+            <div class="bg-yellow-50 rounded-lg p-6 border-2 border-yellow-400">
+                <div class="flex items-center justify-between mb-4">
+                    <h4 class="font-semibold text-gray-800">Scenario Completo</h4>
+                    <span class="px-3 py-1 bg-yellow-400 text-gray-900 text-sm rounded-full">22 sprint</span>
+                </div>
+                <ul class="space-y-2 text-sm text-gray-600 mb-6">
+                    <li class="flex items-start">
+                        <span class="material-icons-outlined text-yellow-500 text-sm mr-2">check_circle</span>
+                        Tutto quanto previsto nello scenario base
+                    </li>
+                    <li class="flex items-start">
+                        <span class="material-icons-outlined text-yellow-500 text-sm mr-2">check_circle</span>
+                        110 giorni lavorativi di sviluppo
+                    </li>
+                    <li class="flex items-start">
+                        <span class="material-icons-outlined text-yellow-500 text-sm mr-2">check_circle</span>
+                        Doppio frontend: grafica storica e nuova, interscambiabili
+                    </li>
+                </ul>
+                <div class="border-t border-yellow-200 pt-4">
+                    <div class="flex items-baseline justify-between">
+                        <span class="text-sm text-gray-500">Totale</span>
+                        <span class="text-2xl font-bold text-gray-800">66.000 €</span>
+                    </div>
+                    <div class="flex items-baseline justify-between mt-2">
+                        <span class="text-sm text-gray-500">12 rate mensili da</span>
+                        <span class="text-lg font-semibold text-gray-800">5.500 € / mese</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Piano Pagamenti -->
+    <div class="bg-white rounded-xl shadow-md p-6">
+        <div class="flex items-center mb-6">
+            <div class="flex items-center justify-center w-12 h-12 bg-yellow-400 rounded-xl mr-4">
+                <span class="material-icons-outlined text-2xl text-gray-900">calendar_month</span>
+            </div>
+            <div>
+                <h3 class="text-lg font-semibold text-yellow-800">Piano Pagamenti Mensile</h3>
+                <p class="text-gray-600 mt-1">Il totale è suddiviso in 12 rate mensili di pari importo</p>
+            </div>
+        </div>
+
+        <div class="overflow-x-auto">
+            <table class="w-full">
+                <thead class="text-sm text-gray-500 border-b">
+                    <tr>
+                        <th class="text-left py-3">Rata</th>
+                        <th class="text-right py-3">Scenario Base (19 sprint)</th>
+                        <th class="text-right py-3">Scenario Completo (22 sprint)</th>
+                    </tr>
+                </thead>
+                <tbody class="text-sm">
+                    <tr class="border-b">
+                        <td class="py-3">Mese 1</td>
+                        <td class="py-3 text-right">4.750 €</td>
+                        <td class="py-3 text-right">5.500 €</td>
+                    </tr>
+                    <tr class="border-b">
+                        <td class="py-3">Mese 2</td>
+                        <td class="py-3 text-right">4.750 €</td>
+                        <td class="py-3 text-right">5.500 €</td>
+                    </tr>
+                    <tr class="border-b">
+                        <td class="py-3">Mese 3</td>
+                        <td class="py-3 text-right">4.750 €</td>
+                        <td class="py-3 text-right">5.500 €</td>
+                    </tr>
+                    <tr class="border-b">
+                        <td class="py-3">Mese 4</td>
+                        <td class="py-3 text-right">4.750 €</td>
+                        <td class="py-3 text-right">5.500 €</td>
+                    </tr>
+                    <tr class="border-b">
+                        <td class="py-3">Mese 5</td>
+                        <td class="py-3 text-right">4.750 €</td>
+                        <td class="py-3 text-right">5.500 €</td>
+                    </tr>
+                    <tr class="border-b">
+                        <td class="py-3">Mese 6</td>
+                        <td class="py-3 text-right">4.750 €</td>
+                        <td class="py-3 text-right">5.500 €</td>
+                    </tr>
+                    <tr class="border-b">
+                        <td class="py-3">Mese 7</td>
+                        <td class="py-3 text-right">4.750 €</td>
+                        <td class="py-3 text-right">5.500 €</td>
+                    </tr>
+                    <tr class="border-b">
+                        <td class="py-3">Mese 8</td>
+                        <td class="py-3 text-right">4.750 €</td>
+                        <td class="py-3 text-right">5.500 €</td>
+                    </tr>
+                    <tr class="border-b">
+                        <td class="py-3">Mese 9</td>
+                        <td class="py-3 text-right">4.750 €</td>
+                        <td class="py-3 text-right">5.500 €</td>
+                    </tr>
+                    <tr class="border-b">
+                        <td class="py-3">Mese 10</td>
+                        <td class="py-3 text-right">4.750 €</td>
+                        <td class="py-3 text-right">5.500 €</td>
+                    </tr>
+                    <tr class="border-b">
+                        <td class="py-3">Mese 11</td>
+                        <td class="py-3 text-right">4.750 €</td>
+                        <td class="py-3 text-right">5.500 €</td>
+                    </tr>
+                    <tr class="border-b">
+                        <td class="py-3">Mese 12</td>
+                        <td class="py-3 text-right">4.750 €</td>
+                        <td class="py-3 text-right">5.500 €</td>
+                    </tr>
+                    <tr class="bg-yellow-50">
+                        <td class="py-3 pl-3 font-semibold text-gray-800 rounded-l-lg">Totale</td>
+                        <td class="py-3 text-right font-semibold text-gray-800">57.000 €</td>
+                        <td class="py-3 pr-3 text-right font-bold text-gray-800 rounded-r-lg">66.000 €</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <!-- Voci Una Tantum -->
+    <div class="bg-white rounded-xl shadow-md p-6">
+        <div class="flex items-center mb-6">
+            <div class="flex items-center justify-center w-12 h-12 bg-yellow-400 rounded-xl mr-4">
+                <span class="material-icons-outlined text-2xl text-gray-900">brush</span>
+            </div>
+            <div>
+                <h3 class="text-lg font-semibold text-yellow-800">Voci Una Tantum</h3>
+                <p class="text-gray-600 mt-1">Attività non ricomprese nel budget sprint, fatturate separatamente</p>
+            </div>
+        </div>
+
+        <div class="bg-gray-50 rounded-lg p-4 border border-gray-100">
+            <div class="flex items-center justify-between">
+                <div>
+                    <div class="font-medium text-gray-800">Design UX/UI — nuova grafica e user experience</div>
+                    <div class="text-sm text-gray-500 mt-1">
+                        Realizzazione a cura di un professionista grafico dedicato. Dettaglio dei deliverable
+                        nel tab <strong>UX/UI Design</strong>.
+                    </div>
+                </div>
+                <div class="text-2xl font-bold text-gray-800 whitespace-nowrap ml-6">2.500 €</div>
+            </div>
+        </div>
+
+        <div class="mt-6 grid grid-cols-2 gap-6">
+            <div class="bg-gray-50 rounded-lg p-4 border border-gray-100">
+                <div class="text-sm text-gray-500">Totale scenario base + design</div>
+                <div class="text-xl font-bold text-gray-800 mt-1">59.500 €</div>
+            </div>
+            <div class="bg-yellow-50 rounded-lg p-4 border border-yellow-200">
+                <div class="text-sm text-gray-500">Totale scenario completo + design</div>
+                <div class="text-xl font-bold text-gray-800 mt-1">68.500 €</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Note -->
+    <div class="bg-gray-50 rounded-lg p-6 border border-gray-200" style="margin-bottom: 120px;">
+        <div class="flex items-start">
+            <span class="material-icons-outlined text-yellow-400 mr-3">info</span>
+            <div>
+                <h4 class="font-medium text-gray-800 mb-2">Note Economiche</h4>
+                <ul class="space-y-2 text-sm text-gray-600">
+                    <li>• Tutti gli importi si intendono <strong>IVA esclusa</strong>.</li>
+                    <li>• Uno sprint corrisponde a 5 giorni lavorativi di team dedicato, al costo di 3.000 €.</li>
+                    <li>• Il piano di pagamento è articolato in 12 rate mensili di pari importo, indipendenti dalla durata effettiva dello sviluppo.</li>
+                    <li>• La Fase 5 (doppio frontend) è opzionale e può essere attivata anche in un secondo momento, al termine delle prime quattro fasi.</li>
+                    <li>• La voce Design UX/UI è una tantum e non rientra nel conteggio degli sprint.</li>
+                    <li>• Non sono inclusi costi di terze parti: hosting, licenze, gateway di pagamento e servizi esterni.</li>
+                    <li>• Preventivo valido fino al <strong>30 settembre 2026</strong>.</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>

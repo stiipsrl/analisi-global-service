@@ -39,6 +39,9 @@
         <button class="tab-btn px-4 py-2 rounded-lg flex items-center" data-tab="demo">
             <span class="material-icons-outlined mr-2">devices</span>Demo
         </button>
+        <button class="tab-btn px-4 py-2 rounded-lg flex items-center" data-tab="economics">
+            <span class="material-icons-outlined mr-2">payments</span>Investimento
+        </button>
     </nav>
 
     <!-- Main Content -->
@@ -68,8 +71,9 @@
                         document.getElementById('main-content').innerHTML = `
                             <div id="overview" class="tab-content active"></div>
                             <div id="analysis" class="tab-content hidden"></div>
-                            <div id="design" class="tab-content"></div>
+                            <div id="design" class="tab-content hidden"></div>
                             <div id="demo" class="tab-content hidden"></div>
+                            <div id="economics" class="tab-content hidden"></div>
                         `;
                         // Load the default tab content
                         loadTabContent('overview', 'views/overview-content.html');
