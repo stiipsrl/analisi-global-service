@@ -6,7 +6,9 @@
             <p class="text-gray-600">
                 Lo sviluppo è valorizzato a sprint: ogni sprint corrisponde a 5 giorni lavorativi di team dedicato
                 e ha un costo di <strong>3.000 €</strong>. Il totale dipende dall'attivazione o meno della fase
-                opzionale del doppio frontend. Tutti gli importi indicati si intendono IVA esclusa.
+                opzionale del doppio frontend. A regime è previsto un <strong>canone annuale di mantenimento
+                pari al 10%</strong> dell'importo totale degli sprint selezionati. Tutti gli importi indicati
+                si intendono IVA esclusa.
             </p>
         </div>
 
@@ -108,10 +110,6 @@
                     </li>
                     <li class="flex items-start">
                         <span class="material-icons-outlined text-yellow-400 text-sm mr-2">check_circle</span>
-                        95 giorni lavorativi di sviluppo
-                    </li>
-                    <li class="flex items-start">
-                        <span class="material-icons-outlined text-yellow-400 text-sm mr-2">check_circle</span>
                         Nuova veste grafica del portale
                     </li>
                 </ul>
@@ -123,6 +121,10 @@
                     <div class="flex items-baseline justify-between mt-2">
                         <span class="text-sm text-gray-500">12 rate mensili da</span>
                         <span class="text-lg font-semibold text-gray-700">4.750 € / mese</span>
+                    </div>
+                    <div class="flex items-baseline justify-between mt-2 pt-2 border-t border-gray-200">
+                        <span class="text-sm text-gray-500">Canone annuale (10%)</span>
+                        <span class="text-lg font-semibold text-gray-700">5.700 € / anno</span>
                     </div>
                 </div>
             </div>
@@ -140,10 +142,6 @@
                     </li>
                     <li class="flex items-start">
                         <span class="material-icons-outlined text-yellow-500 text-sm mr-2">check_circle</span>
-                        110 giorni lavorativi di sviluppo
-                    </li>
-                    <li class="flex items-start">
-                        <span class="material-icons-outlined text-yellow-500 text-sm mr-2">check_circle</span>
                         Doppio frontend: grafica storica e nuova, interscambiabili
                     </li>
                 </ul>
@@ -155,6 +153,10 @@
                     <div class="flex items-baseline justify-between mt-2">
                         <span class="text-sm text-gray-500">12 rate mensili da</span>
                         <span class="text-lg font-semibold text-gray-800">5.500 € / mese</span>
+                    </div>
+                    <div class="flex items-baseline justify-between mt-2 pt-2 border-t border-yellow-200">
+                        <span class="text-sm text-gray-500">Canone annuale (10%)</span>
+                        <span class="text-lg font-semibold text-gray-800">6.600 € / anno</span>
                     </div>
                 </div>
             </div>
@@ -290,6 +292,97 @@
         </div>
     </div>
 
+    <!-- Canone Annuale -->
+    <div class="bg-white rounded-xl shadow-md p-6">
+        <div class="flex items-center mb-6">
+            <div class="flex items-center justify-center w-12 h-12 bg-yellow-400 rounded-xl mr-4">
+                <span class="material-icons-outlined text-2xl text-gray-900">autorenew</span>
+            </div>
+            <div>
+                <h3 class="text-lg font-semibold text-yellow-800">Canone Annuale di Mantenimento</h3>
+                <p class="text-gray-600 mt-1">Pari al <strong>10%</strong> dell'importo totale degli sprint selezionati</p>
+            </div>
+        </div>
+
+        <div class="overflow-x-auto mb-6">
+            <table class="w-full">
+                <thead class="text-sm text-gray-500 border-b">
+                    <tr>
+                        <th class="text-left py-3">Scenario</th>
+                        <th class="text-right py-3">Totale sprint</th>
+                        <th class="text-right py-3">Canone annuale (10%)</th>
+                    </tr>
+                </thead>
+                <tbody class="text-sm">
+                    <tr class="border-b">
+                        <td class="py-3">
+                            <div class="font-medium text-gray-800">Scenario Base</div>
+                            <div class="text-gray-500">19 sprint, fasi 1-4</div>
+                        </td>
+                        <td class="py-3 text-right">57.000 €</td>
+                        <td class="py-3 text-right font-medium text-gray-800">5.700 € / anno</td>
+                    </tr>
+                    <tr class="bg-yellow-50">
+                        <td class="py-3 pl-3 rounded-l-lg">
+                            <div class="font-semibold text-gray-800">Scenario Completo</div>
+                            <div class="text-gray-500">22 sprint, incluso doppio frontend</div>
+                        </td>
+                        <td class="py-3 text-right font-semibold text-gray-800">66.000 €</td>
+                        <td class="py-3 pr-3 text-right font-bold text-gray-800 rounded-r-lg">6.600 € / anno</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="grid grid-cols-2 gap-6">
+            <div class="bg-gray-50 rounded-lg p-4 border border-gray-100">
+                <div class="flex items-center mb-3">
+                    <span class="material-icons-outlined text-yellow-400 mr-2">verified</span>
+                    <h4 class="font-medium text-gray-800">Cosa Comprende</h4>
+                </div>
+                <ul class="space-y-2 text-sm text-gray-600">
+                    <li class="flex items-start">
+                        <span class="material-icons-outlined text-yellow-400 text-sm mr-2">check_circle</span>
+                        Manutenzione correttiva e risoluzione bug
+                    </li>
+                    <li class="flex items-start">
+                        <span class="material-icons-outlined text-yellow-400 text-sm mr-2">check_circle</span>
+                        Aggiornamenti di sicurezza di framework e dipendenze
+                    </li>
+                    <li class="flex items-start">
+                        <span class="material-icons-outlined text-yellow-400 text-sm mr-2">check_circle</span>
+                        Monitoraggio applicativo e verifica e risoluzione anomalie e bug
+                    </li>
+                </ul>
+            </div>
+
+            <div class="bg-gray-50 rounded-lg p-4 border border-gray-100">
+                <div class="flex items-center mb-3">
+                    <span class="material-icons-outlined text-gray-400 mr-2">info</span>
+                    <h4 class="font-medium text-gray-800">Condizioni</h4>
+                </div>
+                <ul class="space-y-2 text-sm text-gray-600">
+                    <li class="flex items-start">
+                        <span class="material-icons-outlined text-gray-400 text-sm mr-2">chevron_right</span>
+                        Decorrenza dalla data di messa in produzione del progetto, con rinnovo annuale
+                    </li>
+                    <li class="flex items-start">
+                        <span class="material-icons-outlined text-gray-400 text-sm mr-2">chevron_right</span>
+                        Ricalcolato se la Fase 5 opzionale viene attivata in seguito
+                    </li>
+                    <li class="flex items-start">
+                        <span class="material-icons-outlined text-gray-400 text-sm mr-2">chevron_right</span>
+                        Non include lo sviluppo di nuove funzionalità
+                    </li>
+                    <li class="flex items-start">
+                        <span class="material-icons-outlined text-gray-400 text-sm mr-2">chevron_right</span>
+                        Non include costi di hosting, licenze e servizi di terze parti
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
     <!-- Note -->
     <div class="bg-gray-50 rounded-lg p-6 border border-gray-200" style="margin-bottom: 120px;">
         <div class="flex items-start">
@@ -302,8 +395,9 @@
                     <li>• Il piano di pagamento è articolato in 12 rate mensili di pari importo, indipendenti dalla durata effettiva dello sviluppo.</li>
                     <li>• La Fase 5 (doppio frontend) è opzionale e può essere attivata anche in un secondo momento, al termine delle prime quattro fasi.</li>
                     <li>• La voce Design UX/UI è una tantum e non rientra nel conteggio degli sprint.</li>
+                    <li>• Il canone annuale di mantenimento è pari al 10% dell'importo totale degli sprint selezionati ed è una voce ricorrente, distinta dall'investimento di sviluppo.</li>
                     <li>• Non sono inclusi costi di terze parti: hosting, licenze, gateway di pagamento e servizi esterni.</li>
-                    <li>• Preventivo valido fino al <strong>30 settembre 2026</strong>.</li>
+                    <li>• Il cliente si impegna a nominare uno o più referenti per gli incontri settimanali di analisi e revisione sprint, come dettagliato nel tab <strong>Analisi Agile</strong>.</li>
                 </ul>
             </div>
         </div>
